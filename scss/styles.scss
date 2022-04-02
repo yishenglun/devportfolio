@@ -685,21 +685,30 @@ footer {
 .project-game {
     position: relative;
     max-width: 900px;
+    height: 300px;
     margin: 0 auto 30px auto;
     overflow: hidden;
     background: #fff;
     border-radius: 4px;
+
+    display: flex;
 }
 
 .project-game .project-image{
-    float: left;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.project-game .project-image img {
+    width: 100%;
 }
 
 .project-info {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    margin-left: 300px;
+    align-self: center;
+    flex-grow: 1;
     padding: 15px;
 
     h3 {
