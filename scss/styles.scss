@@ -460,6 +460,7 @@ footer {
     border-bottom: 1px solid $border;
     text-align: center;
 
+
     .container{
         margin-top: 1rem;
     }
@@ -475,10 +476,16 @@ footer {
         color: $heading;
     }
 
+    .vertical-center{
+        height: 15rem;
+        display: flex;
+    }
+
     p {
         text-align: left;
         color: $text;
         margin: 0;
+        align-self: center;
     }
 }
 
